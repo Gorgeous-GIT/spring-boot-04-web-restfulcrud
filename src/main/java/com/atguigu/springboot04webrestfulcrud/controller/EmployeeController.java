@@ -62,6 +62,7 @@ public class EmployeeController {
 	Employee employee=	employeeDao.get(id);
 		model.addAttribute("emp",employee);
 		//回到修改页面(add是一个修改添加二合一的页面)
+		System.err.print("employee-->"+employee);
 		return "emp/add";
 	}
 }
